@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html ng-app='testApp'>
+	<head >
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" >
+		<!-- <link rel="stylesheet" href="angular-material.min.css"> -->
+		<link rel="stylesheet" href="dashboard.css">
+		<!-- <link rel="stylesheet" href="./themes/orange.css"> -->
+		<!-- <link rel="stylesheet" href="./themes/red.css"> -->
+
+	</head>
+	<body>
+<div class="fsm-dashboard" ng-controller='testController' class="scroll-body">
+			<div class="fsm-header z-depth-5" >
+				<div class="fsm-logo" ><img src="AngularJS-Shield-large.png" height="50px" width="65px" alt="logo"/></div>
+				 <!-- Dropdown Trigger -->
+				 <div class="row">
+					 <div class="col s6 offset-s6">
+					  <a class='dropdown-button btn blue valign' href='#/home' data-activates='dropdown1'>Home</a>
+
+					  <!-- Dropdown Structure -->
+					  <ul id='dropdown1' class='dropdown-content'>
+					    <li><a href="#!">one</a></li>
+					    <li><a href="#!">two</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#!">three</a></li>
+					  </ul>
+
+					  <a class='dropdown-button btn blue valign' href="#/about">About Us</a>
+					</div>
+					<!-- <div class="col s6">
+				      <ul class="tabs">
+				        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+				        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+				        <li class="tab col s3"><a href="#test3">Test 3</a></li>
+				        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+				      </ul>
+				    </div> -->
+				</div>
+				
+				    
+				<!-- <div fsm-menu-button >
+					<i class="fa fa-bars fsm-menu-button-open"></i>
+					<i class="fa fa-arrow-left fsm-menu-button-closed"></i>
+				</div> -->
+				<!-- <nav>
+			    <div class="nav-wrapper">
+			      <form>
+			        <div class="input-field">
+			          <input id="search" type="search" required>
+			          <label for="search"><i class="fa fa-search"></i></label>
+			          <i class="fa fa-times"></i>
+			        </div>
+			      </form>
+			    </div>
+			</nav> -->
+			</div>
+
+
+			<!-- <div class="fsm-menu">
+				
+
+
+				<ul>
+					<li>Menu Item</li>
+
+				</ul>
+			</div> -->
+
+			
+			<div class="fsm-page-content content">
+				<div class="slider">
+				    <ul class="slides">
+				      <li>
+				      	<img src="image1.jpg">
+				        <!-- <img src="http://lorempixel.com/580/250/nature/1"> --> <!-- random image -->
+				        <div class="caption center-align">
+				          <h3>This is our big Tagline!</h3>
+				          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				        </div>
+				      </li>
+				      <li>
+				        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+				        <div class="caption left-align">
+				          <h3>Left Aligned Caption</h3>
+				          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				        </div>
+				      </li>
+				      <li>
+				        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+				        <div class="caption right-align">
+				          <h3>Right Aligned Caption</h3>
+				          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				        </div>
+				      </li>
+				      <li>
+				        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+				        <div class="caption center-align">
+				          <h3>This is our big Tagline!</h3>
+				          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				        </div>
+				      </li>
+				    </ul>
+				  </div>
+
+<div class="container">
+			<div class="row">
+     			 <div class="col s3">
+     
+   			<div class="fade" id="fade">Fade in</div>
+   			<div class="learnMore">
+   				<!-- btn-floating btn-large waves-effect waves-light red -->
+   				<a class="waves-effect waves-light btn modal-trigger" href="#modal1" ng-click="getModal()">Modal</a>
+   			</div>
+			  <!-- Modal Structure -->
+			  <div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4>Modal Header</h4>
+			      <p>A bunch of text</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			    </div>
+			  </div>
+			   </div>
+			   <div class="col s3">
+			   	<div class="fade" id="fade">Fade in</div>
+   			<div class="learnMore">
+   				<!-- btn-floating btn-large waves-effect waves-light red -->
+   				<a class="waves-effect waves-light btn modal-trigger" href="#modal1" ng-click="getModal()">Modal</a>
+   			</div>
+			  <!-- Modal Structure -->
+			  <div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4>Modal Header</h4>
+			      <p>A bunch of text</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			    </div>
+			  </div>
+			   </div>
+			   <div class="col s3">
+			   	<div class="rotate" id="rotate">Rotate</div>
+   			<div class="learnMore">
+   				<!-- btn-floating btn-large waves-effect waves-light red -->
+   				<a class="waves-effect waves-light btn modal-trigger" href="#modal1" ng-click="getModal()">Modal</a>
+   			</div>
+			  <!-- Modal Structure -->
+			  <div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4>Modal Header</h4>
+			      <p>A bunch of text</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			    </div>
+			  </div>
+			   </div>
+			   <div class="col s3">
+			   	<div class="shrink" id="shrink">Shrink</div>
+   			<div class="learnMore">
+   				<!-- btn-floating btn-large waves-effect waves-light red -->
+   				<a class="waves-effect waves-light btn modal-trigger" href="#modal1" ng-click="getModal()">Modal</a>
+   			</div>
+			  <!-- Modal Structure -->
+			  <div id="modal1" class="modal">
+			    <div class="modal-content">
+			      <h4>Modal Header</h4>
+			      <p>A bunch of text</p>
+			    </div>
+			    <div class="modal-footer">
+			      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			    </div>
+			  </div>
+			   </div>
+			</div>
+			<!-- <div class="row">
+				<div class="col s6"></div>
+				<div class="col s6 offset-s6">
+					<h4>Our Main Services</h4>
+						<div class="progress">
+
+					      <div class="determinate" style="width: 99%"></div>
+					  </div>
+					  <div class="progress">
+					      <div class="determinate" style="width: 100%"></div>
+					  </div>
+					  <div class="progress">
+					      <div class="determinate" style="width: 100%"></div>
+					  </div>
+					  <div class="progress">
+					      <div class="determinate" style="width: 100%"></div>
+					  </div>
+
+				</div>
+			</div> -->
+				<div id="area1" class="section text-area">
+			      
+			        <h2 fsm-sticky-header scroll-body="'#area1'" scroll-stop="50">Just a block of text</h2>
+			        <div class="text-content"> 
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at commodo neque, in pellentesque massa. Quisque nibh nisi, eleifend at finibus quis, euismod in metus. Vestibulum sit amet ultricies enim. Nullam odio elit, sollicitudin non varius sit amet, pretium eu metus. Mauris lacinia feugiat odio, et bibendum ligula consectetur et. Proin aliquet eros vel pulvinar mattis. Cras a rutrum lorem, ut luctus dolor. Sed vel eros ut orci sagittis euismod. Curabitur gravida elit sit amet mi rhoncus malesuada.
+						</p>
+						<p>
+						Nunc non massa vel odio tempor hendrerit ut id erat. Nunc auctor mattis sem in gravida. Vestibulum finibus vehicula purus nec gravida. Sed ac vehicula massa, id tristique tortor. Proin euismod, libero non consectetur consectetur, urna nulla dignissim urna, vel laoreet lectus lorem a dui. Proin ac est mauris. Cras et nisl id velit vulputate posuere. Cras convallis bibendum ligula non accumsan.
+						</p>
+						<p>
+						Nunc auctor, velit a gravida iaculis, turpis augue egestas purus, sit amet laoreet eros arcu quis nisl. Suspendisse pellentesque in dolor nec rutrum. Nullam dictum imperdiet luctus. Sed et efficitur urna. Pellentesque volutpat sagittis nisi, sodales interdum nulla mattis a. Etiam vitae elit ac nibh tempor tristique. Nullam quis diam mi. Etiam pretium vel erat sed porta.
+						</p>
+						<p>
+						Donec finibus ut nunc ut ultricies. Duis a felis dui. Nullam ante odio, commodo at posuere eget, tristique at orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas facilisis magna et libero sodales convallis. Fusce et tincidunt nisi. Nulla vitae egestas risus. Nunc rutrum nisl et posuere eleifend. Phasellus ac nisl ut orci suscipit tincidunt.
+						</p>
+						<p>
+						Vivamus vitae molestie metus. Aenean ac nisi sed sem efficitur aliquam. Nunc varius justo sed ante blandit, ac luctus eros ullamcorper. Mauris lacus purus, cursus at nisi eu, ultricies luctus augue. Proin tristique tempor velit sit amet venenatis. Suspendisse potenti. Sed congue turpis sit amet risus facilisis, non laoreet nunc condimentum. Vivamus ornare orci bibendum nisl iaculis accumsan. Mauris volutpat fermentum enim, ac tristique metus vehicula a.
+						</p>
+					</div>
+	      
+				</div>
+	      
+				<div id="area2" class="section text-area">
+			      
+			        <h2 fsm-sticky-header scroll-body="'#area2'" scroll-stop="50">Another block of text</h2>
+					<div class="text-content"> 
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at commodo neque, in pellentesque massa. Quisque nibh nisi, eleifend at finibus quis, euismod in metus. Vestibulum sit amet ultricies enim. Nullam odio elit, sollicitudin non varius sit amet, pretium eu metus. Mauris lacinia feugiat odio, et bibendum ligula consectetur et. Proin aliquet eros vel pulvinar mattis. Cras a rutrum lorem, ut luctus dolor. Sed vel eros ut orci sagittis euismod. Curabitur gravida elit sit amet mi rhoncus malesuada.
+						</p>
+						<p>
+						Nunc non massa vel odio tempor hendrerit ut id erat. Nunc auctor mattis sem in gravida. Vestibulum finibus vehicula purus nec gravida. Sed ac vehicula massa, id tristique tortor. Proin euismod, libero non consectetur consectetur, urna nulla dignissim urna, vel laoreet lectus lorem a dui. Proin ac est mauris. Cras et nisl id velit vulputate posuere. Cras convallis bibendum ligula non accumsan.
+						</p>
+						<p>
+						Nunc auctor, velit a gravida iaculis, turpis augue egestas purus, sit amet laoreet eros arcu quis nisl. Suspendisse pellentesque in dolor nec rutrum. Nullam dictum imperdiet luctus. Sed et efficitur urna. Pellentesque volutpat sagittis nisi, sodales interdum nulla mattis a. Etiam vitae elit ac nibh tempor tristique. Nullam quis diam mi. Etiam pretium vel erat sed porta.
+						</p>
+						<p>
+						Donec finibus ut nunc ut ultricies. Duis a felis dui. Nullam ante odio, commodo at posuere eget, tristique at orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas facilisis magna et libero sodales convallis. Fusce et tincidunt nisi. Nulla vitae egestas risus. Nunc rutrum nisl et posuere eleifend. Phasellus ac nisl ut orci suscipit tincidunt.
+						</p>
+						<p>
+						Vivamus vitae molestie metus. Aenean ac nisi sed sem efficitur aliquam. Nunc varius justo sed ante blandit, ac luctus eros ullamcorper. Mauris lacus purus, cursus at nisi eu, ultricies luctus augue. Proin tristique tempor velit sit amet venenatis. Suspendisse potenti. Sed congue turpis sit amet risus facilisis, non laoreet nunc condimentum. Vivamus ornare orci bibendum nisl iaculis accumsan. Mauris volutpat fermentum enim, ac tristique metus vehicula a.
+						</p>
+					</div>
+				</div>
+
+				<table id="testtable" fsm-big-data="dataPage of test.data take 50">
+			        <thead>
+			        	<tr fsm-sticky-header scroll-body="'#testtable'" scroll-stop="50">
+			            	<th tabindex="1" fsm-sort="id">Number</th>
+			            	<th tabindex="1" fsm-sort="column1">Column One</th>
+			            	<th tabindex="1" fsm-sort="column2">Column Two</th>
+							<th >Column Three</th>		             
+			        	</tr>
+			        </thead>
+			        <tbody>
+			          <tr ng-repeat="row in dataPage">
+			             <td >{{row.id}}</td>
+			             <td >{{row.column1}}</td>
+			             <td >{{row.column2}}</td>
+			             <td >{{row.longText}}.</td>
+			          </tr>
+					</tbody>
+				</table>
+
+			</div>
+			<div ng-view></div>
+		</div>
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-slimscroll.js"></script>
+		
+		<script src="../src/fsm-sticky-header.js"></script>
+		<script src="js/app.js"></script>
+		
+		
+	</body>
+</html>
